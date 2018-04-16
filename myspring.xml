@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<beans>
+	<!-- scope = singleton (默认) 或  prototype-->
+	 
+	 <bean class="" id="" scope="prototype">
+	 	<property name="" value=""></property>
+	 </bean>
+	 
+</beans>
+</config>

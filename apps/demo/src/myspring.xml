@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+<beans>
+	<!-- scope = singleton (默认) 或  prototype-->
+	 
+	 <bean class="test.Book" id="book">
+	 	<property name="name" value="Java入门详解"></property>
+	 </bean>
+	 
+	<bean id="teacher" class="test.Teacher" scope="prototype">
+		<property name="name" value="陈昌" type="java.lang.String"/>
+		<property name="book" ref="book"></property>
+	</bean>
+	
+	<bean class="test.Student" id="student">
+		<property name="name" value="张三"></property>
+		<property name="age" value="18"></property>
+		<property name="score" value="70.5"></property>
+		<property name="teacher" ref="teacher"></property>
+	</bean>	
+	
+</beans>
+</config>
